@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenPOS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./css/fonts-6/css/all.min.css">
+    <link rel="stylesheet" href="./css/fonts-6/css/fontawesome.min.css">
+        <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./item.css">
+             <!-- JQUERY -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>  
+</head>
+<body onload="onload()">
+                    <!-- HEADER -->
+<section class="main_sticky_container">
+    <section class="head">
+        <div class="nav-container">
+            <div class="logo">
+                <div><i class="icofont-book-alt"></i></div>
+                <p>Books</p>
+            </div>
+            <div class="search_bar">
+                     <i class="icofont-search-2"></i>
+                    <input type="search" placeholder="Search in Customers (/)">
+            </div>
+            <div class="nav">
+                <ul class="nav_icons">
+                    <li>
+                        <div class="nav-plus">
+                        <i class="icofont-plus"></i>
+                        <div class="quick-hover">
+                            Quick Create
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="notification">
+                            <i class="fa-regular fa-bell"></i>
+                            <div class="notifi-hover">
+                                Notification
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="setting">
+                            <i class="fa-solid fa-gear"></i>
+                            <div class="setting-hover">
+                                Settings
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="user" id="nav_user_toggle">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>
+
+                <!-- USER -->
+
+<div class="nav_user_show">
+    <div class="user_main">
+        <div class="user_container">
+            <div class="user_img_container">
+                 <div class="user_img">
+                    <i class='bx bxs-user'></i>
+                 </div>
+                 <div class="user_text">
+                    <h6>Deepan K</h6>
+                    <p style="font-size: 10px;"><a>user1@demo5.senthuraa.com</a></p>
+                 </div>
+                 <div class="user_close">
+                    <i class="icofont-close"></i>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- SIDE NAV BAR -->
+<div style="display: flex;">
+    <div>
+<nav class="side_navbar">
+    <div class="side_nav_container">
+        <ul class="side_nav_ul">
+            <li class="side_nav_home">
+                <a href="./index.html">
+                  <i class='bx bx-home-alt' ></i>
+                  <span class="text nav-text">Home</span>
+                </a>
+            </li>
+            <li class="side_nav_inventory">
+                <a href="./sub_containers/inventryUI/inventry.html">
+                    <i class="icofont-cart-alt"></i>
+                  <span class="text nav-text">Inventry</span>
+                </a>
+            </li>
+            <li class="side_nav_sales">
+                <a href="./sub_containers/salesUI/sales.html">
+                    <i class='bx bx-cart-alt'></i>
+                  <span class="text nav-text">Sales</span>
+                </a>
+            </li>
+            <li class="side_nav_records">
+                <a href="./index.html">
+                    <i class="icofont-chart-histogram"></i>
+                  <span class="text nav-text">Records</span>
+                </a>
+            </li>
+                        <!-- SIDE NAV BOTTOM ARROW  -->
+            <div class="side_nav_bottom_main">
+               <li class="side_nav_bottom">
+                <i class="fa-solid fa-angles-right side_nav_icon"></i>
+               </li>
+                            <!-- DARK LIGHT THEME -->
+               <li class="side_nav_dark_light">
+                 <label class="switch">
+                    <input type="checkbox" onclick="darkmode()">
+                    <span class="slider round"></span>
+                  </label>
+               </li>
+           </div>
+        </ul>
+    </div>
+</nav>
+</div>
+<script src="./css/script.js"></script>
+<script src="./item.js"></script>
+</body>
+</html>

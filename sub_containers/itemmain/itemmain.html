@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenPOS</title>
+    <link rel="stylesheet" href="./css/itemmain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./css/fonts-6/css/all.min.css">
+    <link rel="stylesheet" href="./css/fonts-6/css/fontawesome.min.css">
+        <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+             <!-- JQUERY -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>  
+
+</head>
+<body onload="onload()">
+                    <!-- HEADER -->
+<section class="main_sticky_container">
+    <section class="head">
+        <div class="nav-container">
+            <div class="logo">
+                <div><i class="icofont-book-alt"></i></div>
+                <p>Books</p>
+            </div>
+            <div class="search_bar">
+                     <i class="icofont-search-2"></i>
+                    <input type="search" placeholder="Search in Customers (/)">
+            </div>
+            <div class="nav">
+                <ul class="nav_icons">
+                    <li>
+                        <div class="nav-plus">
+                        <i class="icofont-plus"></i>
+                        <div class="quick-hover">
+                            Quick Create
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="notification">
+                            <i class="fa-regular fa-bell"></i>
+                            <div class="notifi-hover">
+                                Notification
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="setting">
+                            <i class="fa-solid fa-gear"></i>
+                            <div class="setting-hover">
+                                Settings
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="user" id="nav_user_toggle">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>
+
+                <!-- USER -->
+
+<div class="nav_user_show">
+    <div class="user_main">
+        <div class="user_container">
+            <div class="user_img_container">
+                 <div class="user_img">
+                    <i class='bx bxs-user'></i>
+                 </div>
+                 <div class="user_text">
+                    <h6>Deepan K</h6>
+                    <p style="font-size: 10px;"><a>user1@demo5.senthuraa.com</a></p>
+                 </div>
+                 <div class="user_close">
+                    <i class="icofont-close"></i>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- SIDE NAV BAR -->
+<div style="display: flex;margin-left: 80px;">
+    <div>
+<nav class="side_navbar">
+    <div class="side_nav_container">
+        <ul class="side_nav_ul">
+            <li class="side_nav_home">
+                <a href="../../index.html">
+                  <i class='bx bx-home-alt' ></i>
+                  <span class="text nav-text">Home</span>
+                </a>
+            </li>
+            <li class="side_nav_inventory">
+                <a href="#">
+                    <i class="icofont-cart-alt"></i>
+                  <span class="text nav-text">Inventry</span>
+                </a>
+            </li>
+            <li class="side_nav_sales">
+                <a href="../salesUI/sales.html">
+                    <i class='bx bx-cart-alt'></i>
+                  <span class="text nav-text">Sales</span>
+                </a>
+            </li>
+            <li class="side_nav_records">
+                <a href="../../index.html">
+                    <i class="icofont-chart-histogram"></i>
+                  <span class="text nav-text">Records</span>
+                </a>
+            </li>
+                        <!-- SIDE NAV BOTTOM ARROW  -->
+            <div class="side_nav_bottom_main">
+               <li class="side_nav_bottom">
+                <i class="fa-solid fa-angles-right side_nav_icon"></i>
+               </li>
+                            <!-- DARK LIGHT THEME -->
+               <li class="side_nav_dark_light">
+                 <label class="switch">
+                    <input type="checkbox" onclick="darkmode()">
+                    <span class="slider round"></span>
+                  </label>
+               </li>
+           </div>
+        </ul>
+    </div>
+</nav>
+</div>
+
+                     <!-- SIDE NAV BOTTOM DROPDOWN -->
+                     <div class="side-nav-dropdown side_nav_dropdown" >
+                        <div class="side-nav-container side_nav_head_color">
+                            <div class="side-nav-item-1 ">
+                                <a href=""><p>Inventory</p></a>
+                            </div>
+                        </div>   
+                        <div class="side-nav-container ">
+                                <div class="side-nav-item-1">
+                                    <a href=""><p>Item</p></a>
+                                </div>
+                                <div class="side-nav-item-2">
+                                    <a href="../itemUI/item.html"><i class='bx bxs-plus-circle' ></i></a>
+                                </div>
+                            </div>
+                            <div class="side-nav-container">
+                                <div class="side-nav-item-1">
+                                    <a href=""><p>Item Sales</p></a>
+                                </div>
+                                <div class="side-nav-item-2">
+                                    <a href=""><i class='bx bxs-plus-circle' ></i></a>
+                                </div>
+                           </div>  
+                           <div class="side-nav-container">
+                            <div class="side-nav-item-1">
+                                <a href=""><p>Item Return</p></a>
+                            </div>
+                            <div class="side-nav-item-2">
+                                <a href=""><i class='bx bxs-plus-circle' ></i></a>
+                            </div>
+                        </div>  
+                        
+                    </div>
+
+                    <!-- ITEM MAIN DATA HEADING -->
+    <div class="itemmain_data_section">
+        <div class="itemmain_data_container">
+            <div class="itemmain_data_heading_container">
+                <div class="itemmain_heading_item">
+                    <h1>All Items</h1>
+                </div>
+                <div class="itemmain_heading_item2">
+                <a href="../itemUI/item.html">
+                    <button><i class="fa-regular fa-plus"></i> New</button>
+                </a>
+                <button class="item_edit_button">Edit</button>
+                </div>
+            </div>
+            <div class="itemmain_data_heading_container itemmain_select2_contain">
+                <div class="itemmain_heading_item" style="position: relative;">
+                    <button class="bulkaction_itemmain" style="border: 1px solid #b8b8b8;padding: 9px 19px 9px 9px;border-radius: 6px;">Bulk Actions<i class="fa-solid fa-caret-down"></i></button>
+                    <div class="bulk_dropdown_btn">
+                      
+                            <button>Mark as Active</button>
+                            <button>Mark as Inactive</button>
+                            <button>Delete</button>
+                        
+                    </div>
+                </div>
+                <div class="itemmain_heading_item2">
+                    <div class="green-bubble"></div>
+                    <div><p id="count-container"></p></div>
+                    <div class="itemmain_green-bubble"><i class="icofont-close"></i></div>
+                </div>
+            </div>
+
+            <div class="header_wrap">
+               
+                <div class="tb_search">
+                    
+                    <div style="position: relative;">
+                     <input type="text" id="search_input_all" onkeyup="FilterkeyWord_all_table()" placeholder="Search.." class="form-control">
+                     <div class="itemmain_search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    </div>
+                </div>
+              </div>
+                      <!-- ITEM MAIN DATA -->
+            <div class="itemmain_table_report_contain">
+                <div class="itemmain_add">
+                    <i class='bx bxs-layer-plus'></i>
+                </div>
+                <table class="table table-striped table-class" id= "table-id" style="overflow-x: auto;">
+                       <tr class="itemmain_table_head">
+                        <th style="width: 5%;"><input type="checkbox"class="select-all" id="select-all-checkbox"></th>
+                        <th style="width: 20%;" id="name_col_head">Name</th>
+                        <th id="sku_col_head">SKU</th>
+                        <th id="hsnsac_col_head">HSN/SAC</th>
+                        <th id="unit_col_head">Unit</th>
+                        <th id="Category_col_head">Category</th>
+                        <th id="SellingPrice_col_head">Selling Price</th>
+                        <th id="PurchasePrice_col_head">Purchase Price</th>
+                        <th id="TaxPreferance_col_head">Tax Preferance</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"class="subject data-checkbox"></td>
+                        <td class="itemmain_check_main"></td>
+                        <td class="sku_col">dee</td>
+                        <td class="hsnsac_col">vt </td>
+                        <td class="unit_col">867</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"class="subject data-checkbox"></td>
+                        <td class="itemmain_check_main"></td>
+                        <td class="sku_col">33</td>
+                        <td class="hsnsac_col">94</td>
+                        <td class="unit_col">344.999</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"class="subject data-checkbox"></td>
+                        <td class="itemmain_check_main"></td>
+                        <td class="sku_col">mathan</td>
+                        <td class="hsnsac_col">12</td>
+                        <td class="unit_col">090</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"class="subject data-checkbox"></td>
+                        <td class="itemmain_check_main"></td>
+                        <td class="sku_col">33</td>
+                        <td class="hsnsac_col">94</td>
+                        <td class="unit_col">344.999</td>
+                    </tr>
+                 
+                </table>
+            </div>
+        </div>
+        <div class="itemmain_pagination">
+
+        </div>
+    </div>
+               
+</div>
+                <!-- ADD RECORDS DATA -->
+<div class="itemmain_record_contain">
+    <div class="itemain_record_item ">
+        <div class="itemmain_record_head_container">
+            <div class="itemmain_record_head">
+                <p> Customize Columns</p>
+            </div>
+            <div class="itemmain_record_text">
+                <p id="d1">of 8 selected </p>
+            </div>
+            <div class="itemmain_record_icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <div id="checkbox_div">
+            <div class="item_cus_serch"><input type="text" placeholder="Search"id="item_searchInput">
+                <div class="itemmain_check_search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <ul id="list">
+            <li style="position: relative;"><label for="name_col"><input type="checkbox"  value="hide" id="name_col"  onchange="hide_show_table(this.id);"checked disabled>Name</label><div class="lock"><i class='bx bx-lock-alt' ></i><p class="item_permanant_field">Permanant Field</p></div></li>
+            <li><label for="sku_col"><input type="checkbox" value="hide" id="sku_col"  onchange="hide_show_table(this.id);"checked>SKU</label></li>
+            <li><label for="unit_col"><input type="checkbox" value="hide" id="unit_col" onchange="hide_show_table(this.id);"checked>Unit</label></li>
+            <li><label for="Category_col"><input type="checkbox" value="hide" id="Category_col" onchange="hide_show_table(this.id);"checked>Category</label></li>
+            <li><label for="hsnsac_col"><input type="checkbox" value="hide" id="hsnsac_col" onchange="hide_show_table(this.id);">HSN/SAC</label></li>
+            <li><label for="SellingPrice_col"><input type="checkbox" value="hide" id="SellingPrice_col" onchange="hide_show_table(this.id);">Selling Price</label></li>
+            <li><label for="PurchasePrice_col"><input type="checkbox" value="hide" id="PurchasePrice_col" onchange="hide_show_table(this.id);">Purchase Price</label></li>
+            <li><label for="TaxPreferance_col"><input type="checkbox" value="hide" id="TaxPreferance_col" onchange="hide_show_table(this.id);">Tax Preferance</label></li>
+        </ul>
+        </div>
+
+        <div class="add_record_container">
+            <button class="add_record_save" onclick="itemmainSubmit()">Save</button>
+            <button class="add_record_cancel">Cancel</button>
+        </div>
+        
+    </div>
+</div>       
+
+<script src="./css/itemmain.js"></script>
+</body>
+</html>
