@@ -161,11 +161,11 @@ itemmain_green_bubble.addEventListener("click",()=>{
 $(document).ready(function() {
   $('label input[type="checkbox"]').change(function(){
   var total_checked=  $("label input[type='checkbox']:checked").length 
-  $("#d1").html(total_checked +" of 36 selected");
+  $("#d1").html(total_checked +" of 8 selected");
   });
   /////////////
   var total_checked=  $("label input[type='checkbox']:checked").length 
-  $("#d1").html(total_checked +" of 36 selected" );
+  $("#d1").html(total_checked +" of 8 selected" );
   ///////
   });
 
